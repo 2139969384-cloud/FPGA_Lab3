@@ -1,0 +1,33 @@
+digraph "Top" {
+label="Top";
+rankdir="LR";
+remincross=true;
+n1 [ shape=octagon, label="hsync", color="black", fontcolor="black" ];
+n2 [ shape=diamond, label="pix_data", color="black", fontcolor="black" ];
+n3 [ shape=diamond, label="pix_x", color="black", fontcolor="black" ];
+n4 [ shape=diamond, label="pix_y", color="black", fontcolor="black" ];
+n5 [ shape=octagon, label="rgb", color="black", fontcolor="black" ];
+n6 [ shape=octagon, label="sys_clk", color="black", fontcolor="black" ];
+n7 [ shape=octagon, label="sys_rst_n", color="black", fontcolor="black" ];
+n8 [ shape=diamond, label="vga_clk", color="black", fontcolor="black" ];
+n9 [ shape=octagon, label="vsync", color="black", fontcolor="black" ];
+c10 [ shape=record, label="{{<p2> pix_data|<p7> sys_rst_n|<p8> vga_clk}|u_VGA_ctrl\nVGA_ctrl|{<p1> hsync|<p3> pix_x|<p4> pix_y|<p5> rgb|<p9> vsync}}" ];
+c11 [ shape=record, label="{{<p3> pix_x|<p4> pix_y|<p7> sys_rst_n|<p8> vga_clk}|u_VGA_pic\nVGA_pic|{<p2> pix_data}}" ];
+c12 [ shape=record, label="{{<p6> sys_clk|<p7> sys_rst_n}|u_pll\npll|{<p8> vga_clk}}" ];
+c10:p1:e -> n1:w [color="black", label=""];
+c11:p2:e -> n2:w [color="black", style="setlinewidth(3)", label=""];
+n2:e -> c10:p2:w [color="black", style="setlinewidth(3)", label=""];
+c10:p3:e -> n3:w [color="black", style="setlinewidth(3)", label=""];
+n3:e -> c11:p3:w [color="black", style="setlinewidth(3)", label=""];
+c10:p4:e -> n4:w [color="black", style="setlinewidth(3)", label=""];
+n4:e -> c11:p4:w [color="black", style="setlinewidth(3)", label=""];
+c10:p5:e -> n5:w [color="black", style="setlinewidth(3)", label=""];
+n6:e -> c12:p6:w [color="black", label=""];
+n7:e -> c10:p7:w [color="black", label=""];
+n7:e -> c11:p7:w [color="black", label=""];
+n7:e -> c12:p7:w [color="black", label=""];
+c12:p8:e -> n8:w [color="black", label=""];
+n8:e -> c10:p8:w [color="black", label=""];
+n8:e -> c11:p8:w [color="black", label=""];
+c10:p9:e -> n9:w [color="black", label=""];
+}
