@@ -35,7 +35,7 @@ module VGA_pic_tb();
         pix_y = 10'd208;
 
         #40;
-        pix_x = 10'd10; // not in the VGA screen
+        pix_x = 10'd10; // screen
         pix_y = 10'd10;
     end
 

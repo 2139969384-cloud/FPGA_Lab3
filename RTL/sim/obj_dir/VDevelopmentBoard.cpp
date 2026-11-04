@@ -69,7 +69,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__1(VDevelopmentBoard__Syms* 
     VDevelopmentBoard* const __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
     vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__vga_clk 
-        = ((IData)(vlTOPp->reset) & (~ (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__vga_clk)));
+        = ((IData)(vlTOPp->B2) & (~ (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__vga_clk)));
 }
 
 VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* __restrict vlSymsp) {
@@ -83,7 +83,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
         = vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__u_VGA_ctrl__DOT__cnt_h;
     __Vdly__DevelopmentBoard__DOT__Top_inst__DOT__u_VGA_ctrl__DOT__cnt_v 
         = vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__u_VGA_ctrl__DOT__cnt_v;
-    if (vlTOPp->reset) {
+    if (vlTOPp->B2) {
         vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_data 
             = (((((0x64U <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x)) 
                   & (0xa4U > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x))) 
@@ -237,8 +237,8 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                         - (IData)(0x64U)) 
                                                        >> 2U))))))
                                     ? 0x1fU : 0xffe0U)))))
-                : (((((0x104U <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x)) 
-                      & (0x144U > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x))) 
+                : (((((0xc8U <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x)) 
+                      & (0x108U > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x))) 
                      & (0xd0U <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y))) 
                     & (0x110U > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y)))
                     ? ((0x20U & ((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y) 
@@ -258,7 +258,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                          - 
                                                          (0xffU 
                                                           & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                              - (IData)(0x104U)) 
+                                                              - (IData)(0xc8U)) 
                                                              >> 2U))))))
                                                   ? 0x1fU
                                                   : 0xffe0U)
@@ -270,7 +270,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                          - 
                                                          (0xffU 
                                                           & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                              - (IData)(0x104U)) 
+                                                              - (IData)(0xc8U)) 
                                                              >> 2U))))))
                                                   ? 0x1fU
                                                   : 0xffe0U))
@@ -285,7 +285,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                          - 
                                                          (0xffU 
                                                           & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                              - (IData)(0x104U)) 
+                                                              - (IData)(0xc8U)) 
                                                              >> 2U))))))
                                                   ? 0x1fU
                                                   : 0xffe0U)
@@ -297,7 +297,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                          - 
                                                          (0xffU 
                                                           & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                              - (IData)(0x104U)) 
+                                                              - (IData)(0xc8U)) 
                                                              >> 2U))))))
                                                   ? 0x1fU
                                                   : 0xffe0U))))
@@ -313,7 +313,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                      - 
                                                      (0xffU 
                                                       & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                          - (IData)(0x104U)) 
+                                                          - (IData)(0xc8U)) 
                                                          >> 2U))))))
                                         ? 0x1fU : 0xffe0U)
                                     : ((1U & (0x70e0U 
@@ -322,7 +322,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                      - 
                                                      (0xffU 
                                                       & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                          - (IData)(0x104U)) 
+                                                          - (IData)(0xc8U)) 
                                                          >> 2U))))))
                                         ? 0x1fU : 0xffe0U))
                                 : ((4U & ((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y) 
@@ -333,7 +333,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                      - 
                                                      (0xffU 
                                                       & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                          - (IData)(0x104U)) 
+                                                          - (IData)(0xc8U)) 
                                                          >> 2U))))))
                                         ? 0x1fU : 0xffe0U)
                                     : ((1U & (0x70e0U 
@@ -342,7 +342,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                      - 
                                                      (0xffU 
                                                       & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                          - (IData)(0x104U)) 
+                                                          - (IData)(0xc8U)) 
                                                          >> 2U))))))
                                         ? 0x1fU : 0xffe0U)))
                             : ((8U & ((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y) 
@@ -355,7 +355,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                      - 
                                                      (0xffU 
                                                       & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                          - (IData)(0x104U)) 
+                                                          - (IData)(0xc8U)) 
                                                          >> 2U))))))
                                         ? 0x1fU : 0xffe0U)
                                     : ((1U & (0x70e0U 
@@ -364,7 +364,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                      - 
                                                      (0xffU 
                                                       & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                          - (IData)(0x104U)) 
+                                                          - (IData)(0xc8U)) 
                                                          >> 2U))))))
                                         ? 0x1fU : 0xffe0U))
                                 : ((4U & ((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y) 
@@ -375,7 +375,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                      - 
                                                      (0xffU 
                                                       & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                          - (IData)(0x104U)) 
+                                                          - (IData)(0xc8U)) 
                                                          >> 2U))))))
                                         ? 0x1fU : 0xffe0U)
                                     : ((1U & (0x70e0U 
@@ -384,11 +384,11 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                      - 
                                                      (0xffU 
                                                       & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                          - (IData)(0x104U)) 
+                                                          - (IData)(0xc8U)) 
                                                          >> 2U))))))
                                         ? 0x1fU : 0xffe0U)))))
-                    : (((((0x1a4U <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x)) 
-                          & (0x1e4U > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x))) 
+                    : (((((0x12cU <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x)) 
+                          & (0x16cU > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x))) 
                          & (0xd0U <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y))) 
                         & (0x110U > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y)))
                         ? ((0x20U & ((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y) 
@@ -410,7 +410,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                           - 
                                                           (0xffU 
                                                            & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                               - (IData)(0x1a4U)) 
+                                                               - (IData)(0x12cU)) 
                                                               >> 2U))))))
                                                    ? 0x1fU
                                                    : 0xffe0U)
@@ -423,7 +423,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                           - 
                                                           (0xffU 
                                                            & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                               - (IData)(0x1a4U)) 
+                                                               - (IData)(0x12cU)) 
                                                               >> 2U))))))
                                                    ? 0x1fU
                                                    : 0xffe0U))
@@ -439,7 +439,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                           - 
                                                           (0xffU 
                                                            & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                               - (IData)(0x1a4U)) 
+                                                               - (IData)(0x12cU)) 
                                                               >> 2U))))))
                                                    ? 0x1fU
                                                    : 0xffe0U)
@@ -452,7 +452,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                           - 
                                                           (0xffU 
                                                            & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                               - (IData)(0x1a4U)) 
+                                                               - (IData)(0x12cU)) 
                                                               >> 2U))))))
                                                    ? 0x1fU
                                                    : 0xffe0U))))
@@ -469,7 +469,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                       - 
                                                       (0xffU 
                                                        & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                           - (IData)(0x1a4U)) 
+                                                           - (IData)(0x12cU)) 
                                                           >> 2U))))))
                                             ? 0x1fU
                                             : 0xffe0U)
@@ -480,7 +480,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                       - 
                                                       (0xffU 
                                                        & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                           - (IData)(0x1a4U)) 
+                                                           - (IData)(0x12cU)) 
                                                           >> 2U))))))
                                             ? 0x1fU
                                             : 0xffe0U))
@@ -493,7 +493,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                       - 
                                                       (0xffU 
                                                        & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                           - (IData)(0x1a4U)) 
+                                                           - (IData)(0x12cU)) 
                                                           >> 2U))))))
                                             ? 0x1fU
                                             : 0xffe0U)
@@ -504,7 +504,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                       - 
                                                       (0xffU 
                                                        & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                           - (IData)(0x1a4U)) 
+                                                           - (IData)(0x12cU)) 
                                                           >> 2U))))))
                                             ? 0x1fU
                                             : 0xffe0U)))
@@ -519,7 +519,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                       - 
                                                       (0xffU 
                                                        & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                           - (IData)(0x1a4U)) 
+                                                           - (IData)(0x12cU)) 
                                                           >> 2U))))))
                                             ? 0x1fU
                                             : 0xffe0U)
@@ -530,7 +530,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                       - 
                                                       (0xffU 
                                                        & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                           - (IData)(0x1a4U)) 
+                                                           - (IData)(0x12cU)) 
                                                           >> 2U))))))
                                             ? 0x1fU
                                             : 0xffe0U))
@@ -543,7 +543,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                       - 
                                                       (0xffU 
                                                        & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                           - (IData)(0x1a4U)) 
+                                                           - (IData)(0x12cU)) 
                                                           >> 2U))))))
                                             ? 0x1fU
                                             : 0xffe0U)
@@ -554,12 +554,12 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                       - 
                                                       (0xffU 
                                                        & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                           - (IData)(0x1a4U)) 
+                                                           - (IData)(0x12cU)) 
                                                           >> 2U))))))
                                             ? 0x1fU
                                             : 0xffe0U)))))
-                        : (((((0x244U <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x)) 
-                              & (0x284U > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x))) 
+                        : (((((0x190U <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x)) 
+                              & (0x1d0U > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x))) 
                              & (0xd0U <= (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y))) 
                             & (0x110U > (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y)))
                             ? ((0x20U & ((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_y) 
@@ -582,7 +582,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                            - 
                                                            (0xffU 
                                                             & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                                - (IData)(0x244U)) 
+                                                                - (IData)(0x190U)) 
                                                                >> 2U))))))
                                                     ? 0x1fU
                                                     : 0xffe0U)
@@ -595,7 +595,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                            - 
                                                            (0xffU 
                                                             & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                                - (IData)(0x244U)) 
+                                                                - (IData)(0x190U)) 
                                                                >> 2U))))))
                                                     ? 0x1fU
                                                     : 0xffe0U))
@@ -612,7 +612,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                            - 
                                                            (0xffU 
                                                             & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                                - (IData)(0x244U)) 
+                                                                - (IData)(0x190U)) 
                                                                >> 2U))))))
                                                     ? 0x1fU
                                                     : 0xffe0U)
@@ -625,7 +625,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                            - 
                                                            (0xffU 
                                                             & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                                - (IData)(0x244U)) 
+                                                                - (IData)(0x190U)) 
                                                                >> 2U))))))
                                                     ? 0x1fU
                                                     : 0xffe0U))))
@@ -643,7 +643,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                        - 
                                                        (0xffU 
                                                         & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                            - (IData)(0x244U)) 
+                                                            - (IData)(0x190U)) 
                                                            >> 2U))))))
                                                 ? 0x1fU
                                                 : 0xffe0U)
@@ -655,7 +655,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                        - 
                                                        (0xffU 
                                                         & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                            - (IData)(0x244U)) 
+                                                            - (IData)(0x190U)) 
                                                            >> 2U))))))
                                                 ? 0x1fU
                                                 : 0xffe0U))
@@ -669,7 +669,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                        - 
                                                        (0xffU 
                                                         & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                            - (IData)(0x244U)) 
+                                                            - (IData)(0x190U)) 
                                                            >> 2U))))))
                                                 ? 0x1fU
                                                 : 0xffe0U)
@@ -681,7 +681,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                        - 
                                                        (0xffU 
                                                         & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                            - (IData)(0x244U)) 
+                                                            - (IData)(0x190U)) 
                                                            >> 2U))))))
                                                 ? 0x1fU
                                                 : 0xffe0U)))
@@ -697,7 +697,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                        - 
                                                        (0xffU 
                                                         & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                            - (IData)(0x244U)) 
+                                                            - (IData)(0x190U)) 
                                                            >> 2U))))))
                                                 ? 0x1fU
                                                 : 0xffe0U)
@@ -709,7 +709,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                        - 
                                                        (0xffU 
                                                         & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                            - (IData)(0x244U)) 
+                                                            - (IData)(0x190U)) 
                                                            >> 2U))))))
                                                 ? 0x1fU
                                                 : 0xffe0U))
@@ -723,7 +723,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                        - 
                                                        (0xffU 
                                                         & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                            - (IData)(0x244U)) 
+                                                            - (IData)(0x190U)) 
                                                            >> 2U))))))
                                                 ? 0x1fU
                                                 : 0xffe0U)
@@ -735,7 +735,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
                                                        - 
                                                        (0xffU 
                                                         & (((IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_x) 
-                                                            - (IData)(0x244U)) 
+                                                            - (IData)(0x190U)) 
                                                            >> 2U))))))
                                                 ? 0x1fU
                                                 : 0xffe0U)))))
@@ -747,7 +747,7 @@ VL_INLINE_OPT void VDevelopmentBoard::_sequent__TOP__3(VDevelopmentBoard__Syms* 
         vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__pix_data = 0xffe0U;
         __Vdly__DevelopmentBoard__DOT__Top_inst__DOT__u_VGA_ctrl__DOT__cnt_h = 0U;
     }
-    if (vlTOPp->reset) {
+    if (vlTOPp->B2) {
         if (((0x20cU == (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__u_VGA_ctrl__DOT__cnt_v)) 
              & (0x31fU == (IData)(vlTOPp->DevelopmentBoard__DOT__Top_inst__DOT__u_VGA_ctrl__DOT__cnt_h)))) {
             __Vdly__DevelopmentBoard__DOT__Top_inst__DOT__u_VGA_ctrl__DOT__cnt_v = 0U;
@@ -794,18 +794,18 @@ void VDevelopmentBoard::_eval(VDevelopmentBoard__Syms* __restrict vlSymsp) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    VDevelopmentBoard::_eval\n"); );
     VDevelopmentBoard* const __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
-    if ((((IData)(vlTOPp->clk) & (~ (IData)(vlTOPp->__Vclklast__TOP__clk))) 
-         | ((~ (IData)(vlTOPp->reset)) & (IData)(vlTOPp->__Vclklast__TOP__reset)))) {
+    if ((((~ (IData)(vlTOPp->B2)) & (IData)(vlTOPp->__Vclklast__TOP__B2)) 
+         | ((IData)(vlTOPp->clk) & (~ (IData)(vlTOPp->__Vclklast__TOP__clk))))) {
         vlTOPp->_sequent__TOP__1(vlSymsp);
     }
-    if ((((IData)(vlTOPp->__VinpClk__TOP__DevelopmentBoard__DOT__Top_inst__DOT__vga_clk) 
-          & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__DevelopmentBoard__DOT__Top_inst__DOT__vga_clk))) 
-         | ((~ (IData)(vlTOPp->reset)) & (IData)(vlTOPp->__Vclklast__TOP__reset)))) {
+    if ((((~ (IData)(vlTOPp->B2)) & (IData)(vlTOPp->__Vclklast__TOP__B2)) 
+         | ((IData)(vlTOPp->__VinpClk__TOP__DevelopmentBoard__DOT__Top_inst__DOT__vga_clk) 
+            & (~ (IData)(vlTOPp->__Vclklast__TOP____VinpClk__TOP__DevelopmentBoard__DOT__Top_inst__DOT__vga_clk))))) {
         vlTOPp->_sequent__TOP__3(vlSymsp);
     }
     // Final
+    vlTOPp->__Vclklast__TOP__B2 = vlTOPp->B2;
     vlTOPp->__Vclklast__TOP__clk = vlTOPp->clk;
-    vlTOPp->__Vclklast__TOP__reset = vlTOPp->reset;
     vlTOPp->__Vclklast__TOP____VinpClk__TOP__DevelopmentBoard__DOT__Top_inst__DOT__vga_clk 
         = vlTOPp->__VinpClk__TOP__DevelopmentBoard__DOT__Top_inst__DOT__vga_clk;
     vlTOPp->__VinpClk__TOP__DevelopmentBoard__DOT__Top_inst__DOT__vga_clk 

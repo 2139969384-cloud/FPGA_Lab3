@@ -19,7 +19,7 @@ module DevelopmentBoard(
 
 Top Top_inst(
     .sys_clk(clk),
-    .sys_rst_n(reset),
+    .sys_rst_n(B2),
     .hsync(h_sync),
     .vsync(v_sync),
     .rgb(rgb)

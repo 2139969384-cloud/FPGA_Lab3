@@ -86,13 +86,13 @@ module VGA_pic(
     localparam M_X_START = 10'd100;
     localparam M_Y_START = 10'd208;
 
-    localparam U_X_START = 10'd260;
+    localparam U_X_START = 10'd200;
     localparam U_Y_START = 10'd208;
 
-    localparam S_X_START = 10'd420;
+    localparam S_X_START = 10'd300;
     localparam S_Y_START = 10'd208;
 
-    localparam T_X_START = 10'd580;
+    localparam T_X_START = 10'd400;
     localparam T_Y_START = 10'd208;
 
     localparam BOX_WIDTH  = 10'd64;

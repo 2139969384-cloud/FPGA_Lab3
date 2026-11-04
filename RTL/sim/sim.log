@@ -6849,3 +6849,1468 @@ Final time stamp:    1328255176
 [SimThread] Simulation loop ended
 ----------------------------------------
 ✓ Simulation execution completed!
+
+========== 2026-11-04 16:21:02.838189 ==========
+Detected OS: Linux
+Found SDL2: sdl2-config
+SDL CFLAGS: -I/usr/include/SDL2 -D_REENTRANT
+SDL LIBS: -lSDL2
+Start simulation...
+Include directories used: /media/sf_ShareFolder/Project/Lab3/RTL
+---------------------------------
+Step 0: Clean up previously generated files...
+Remove obj_dir ...
+✓ Sucessfully remove obj_dir 
+---------------------------------
+Step 1: Run Verilator Compiler...
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:114:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  114 |     wire [3:0] m_char_y = (pix_y - M_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+                ... Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:117:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  117 |     wire [3:0] u_char_y = (pix_y - U_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:120:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  120 |     wire [3:0] s_char_y = (pix_y - S_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:123:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  123 |     wire [3:0] t_char_y = (pix_y - T_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+✓ Verilator compilation completed successfully!
+---------------------------------
+Step 2: Build the simulation executable...
+make: 进入目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o simulator.o ../simulator.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VDevelopmentBoard.cpp VDevelopmentBoard__Slow.cpp VDevelopmentBoard__Syms.cpp > VDevelopmentBoard__ALL.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o VDevelopmentBoard__ALL.o VDevelopmentBoard__ALL.cpp
+ar -cr VDevelopmentBoard__ALL.a VDevelopmentBoard__ALL.o
+ranlib VDevelopmentBoard__ALL.a
+../simulator.cpp: In function ‘void render_sdl()’:
+../simulator.cpp:305:34: warning: narrowing conversion of ‘(49 + i)’ from ‘int’ to ‘char’ [-Wnarrowing]
+  305 |         char digit_str[2] = {'1' + i, '\0'};
+      |                              ~~~~^~~
+g++    simulator.o verilated.o VDevelopmentBoard__ALL.a   -lSDL2    -o VDevelopmentBoard
+make: 离开目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+✓ Simulation executable file built successfully!
+---------------------------------
+Step 3: Start the simulation...
+----------------------------------------
+Window surface size: 800x850
+[SimThread] Starting simulation loop...
+[EventLoop] Dropped 5 events this frame (processed 1/6)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 3 | Dropped: 6 | MaxEvents/Frame: 6 | MaxFrameTime: 12ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 10ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 9ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 8ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 9ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 60 | Events: 13 | Dropped: 13 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 36 | Dropped: 40 | MaxEvents/Frame: 4 | MaxFrameTime: 11ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 32 | Dropped: 25 | MaxEvents/Frame: 3 | MaxFrameTime: 10ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 1 | Dropped: 1 | MaxEvents/Frame: 2 | MaxFrameTime: 12ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[VGA] VSync #60 (frame 1s)
+[EventLoop] FPS: 59 | Events: 2 | Dropped: 1 | MaxEvents/Frame: 2 | MaxFrameTime: 7ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Quit key pressed
+
+========== EventLoop Final Stats ==========
+Total frames processed: 38
+Total events processed: 2
+Total events dropped:   1
+Max events in one frame: 2
+===========================================
+
+========== Simulation Thread Stats ==========
+Simulation duration: 11s
+Total iterations:    27911034
+Iterations/second:   2537366
+Final time stamp:    111644156
+=============================================
+[SimThread] Simulation loop ended
+----------------------------------------
+✓ Simulation execution completed!
+
+========== 2026-11-04 16:21:42.583860 ==========
+Detected OS: Linux
+Found SDL2: sdl2-config
+SDL CFLAGS: -I/usr/include/SDL2 -D_REENTRANT
+SDL LIBS: -lSDL2
+Start simulation...
+Include directories used: /media/sf_ShareFolder/Project/Lab3/RTL
+---------------------------------
+Step 0: Clean up previously generated files...
+Remove obj_dir ...
+✓ Sucessfully remove obj_dir 
+---------------------------------
+Step 1: Run Verilator Compiler...
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:114:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  114 |     wire [3:0] m_char_y = (pix_y - M_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+                ... Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:117:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  117 |     wire [3:0] u_char_y = (pix_y - U_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:120:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  120 |     wire [3:0] s_char_y = (pix_y - S_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:123:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  123 |     wire [3:0] t_char_y = (pix_y - T_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+✓ Verilator compilation completed successfully!
+---------------------------------
+Step 2: Build the simulation executable...
+make: 进入目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o simulator.o ../simulator.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VDevelopmentBoard.cpp VDevelopmentBoard__Slow.cpp VDevelopmentBoard__Syms.cpp > VDevelopmentBoard__ALL.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o VDevelopmentBoard__ALL.o VDevelopmentBoard__ALL.cpp
+ar -cr VDevelopmentBoard__ALL.a VDevelopmentBoard__ALL.o
+ranlib VDevelopmentBoard__ALL.a
+../simulator.cpp: In function ‘void render_sdl()’:
+../simulator.cpp:305:34: warning: narrowing conversion of ‘(49 + i)’ from ‘int’ to ‘char’ [-Wnarrowing]
+  305 |         char digit_str[2] = {'1' + i, '\0'};
+      |                              ~~~~^~~
+g++    simulator.o verilated.o VDevelopmentBoard__ALL.a   -lSDL2    -o VDevelopmentBoard
+make: 离开目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+✓ Simulation executable file built successfully!
+---------------------------------
+Step 3: Start the simulation...
+----------------------------------------
+Window surface size: 800x850
+[SimThread] Starting simulation loop...
+[EventLoop] Dropped 4 events this frame (processed 1/5)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 4 | MaxEvents/Frame: 5 | MaxFrameTime: 13ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 5 | Dropped: 8 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 12ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 13ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 13ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 10ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 13ms
+[VGA] VSync #60 (frame 1s)
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 19ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 12ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 13 | Dropped: 14 | MaxEvents/Frame: 3 | MaxFrameTime: 14ms
+[EventLoop] Slow frame: 39ms (target: 16ms)
+[EventLoop] FPS: 57 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 39ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 10ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 17ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 15ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 9ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 8ms
+[VGA] VSync #120 (frame 2s)
+[EventLoop] FPS: 60 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 8ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 12ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 12ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 12ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 12ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 12ms
+[EventLoop] Slow frame: 34ms (target: 16ms)
+[EventLoop] FPS: 57 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 34ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 10ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 17ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 1 | Dropped: 1 | MaxEvents/Frame: 2 | MaxFrameTime: 12ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 6 | Dropped: 9 | MaxEvents/Frame: 3 | MaxFrameTime: 18ms
+[Input] Quit key pressed
+
+========== EventLoop Final Stats ==========
+Total frames processed: 12
+Total events processed: 1
+Total events dropped:   0
+Max events in one frame: 1
+===========================================
+
+========== Simulation Thread Stats ==========
+Simulation duration: 32s
+Total iterations:    74267648
+Iterations/second:   2320864
+Final time stamp:    297070612
+=============================================
+[SimThread] Simulation loop ended
+----------------------------------------
+✓ Simulation execution completed!
+
+========== 2026-11-04 17:03:10.292622 ==========
+Detected OS: Linux
+Found SDL2: sdl2-config
+SDL CFLAGS: -I/usr/include/SDL2 -D_REENTRANT
+SDL LIBS: -lSDL2
+Start simulation...
+Include directories used: /media/sf_ShareFolder/Project/Lab3/RTL
+---------------------------------
+Step 0: Clean up previously generated files...
+Remove obj_dir ...
+✓ Sucessfully remove obj_dir 
+---------------------------------
+Step 1: Run Verilator Compiler...
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:114:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  114 |     wire [3:0] m_char_y = (pix_y - M_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+                ... Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:117:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  117 |     wire [3:0] u_char_y = (pix_y - U_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:120:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  120 |     wire [3:0] s_char_y = (pix_y - S_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:123:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  123 |     wire [3:0] t_char_y = (pix_y - T_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+✓ Verilator compilation completed successfully!
+---------------------------------
+Step 2: Build the simulation executable...
+make: 进入目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o simulator.o ../simulator.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VDevelopmentBoard.cpp VDevelopmentBoard__Slow.cpp VDevelopmentBoard__Syms.cpp > VDevelopmentBoard__ALL.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o VDevelopmentBoard__ALL.o VDevelopmentBoard__ALL.cpp
+ar -cr VDevelopmentBoard__ALL.a VDevelopmentBoard__ALL.o
+ranlib VDevelopmentBoard__ALL.a
+../simulator.cpp: In function ‘void render_sdl()’:
+../simulator.cpp:305:34: warning: narrowing conversion of ‘(49 + i)’ from ‘int’ to ‘char’ [-Wnarrowing]
+  305 |         char digit_str[2] = {'1' + i, '\0'};
+      |                              ~~~~^~~
+g++    simulator.o verilated.o VDevelopmentBoard__ALL.a   -lSDL2    -o VDevelopmentBoard
+make: 离开目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+✓ Simulation executable file built successfully!
+---------------------------------
+Step 3: Start the simulation...
+----------------------------------------
+Window surface size: 800x850
+[SimThread] Starting simulation loop...
+[EventLoop] Dropped 4 events this frame (processed 1/5)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 22 | Dropped: 25 | MaxEvents/Frame: 5 | MaxFrameTime: 10ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 18 | Dropped: 26 | MaxEvents/Frame: 4 | MaxFrameTime: 13ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 4 | Dropped: 6 | MaxEvents/Frame: 3 | MaxFrameTime: 13ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 10 | Dropped: 6 | MaxEvents/Frame: 3 | MaxFrameTime: 18ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 3 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 11 | Dropped: 12 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 9ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[VGA] VSync #60 (frame 1s)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 8 | Dropped: 7 | MaxEvents/Frame: 3 | MaxFrameTime: 10ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[EventLoop] FPS: 58 | Events: 1 | Dropped: 2 | MaxEvents/Frame: 3 | MaxFrameTime: 13ms
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 57 | Events: 1 | Dropped: 1 | MaxEvents/Frame: 2 | MaxFrameTime: 11ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Slow frame: 30ms (target: 16ms)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 57 | Events: 3 | Dropped: 5 | MaxEvents/Frame: 3 | MaxFrameTime: 30ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 57 | Events: 8 | Dropped: 3 | MaxEvents/Frame: 2 | MaxFrameTime: 10ms
+[SimThread] Reset triggered
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 5 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 10ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[EventLoop] FPS: 59 | Events: 10 | Dropped: 8 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 1 | Dropped: 1 | MaxEvents/Frame: 2 | MaxFrameTime: 11ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 9ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[VGA] VSync #120 (frame 2s)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 10ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 9 | Dropped: 7 | MaxEvents/Frame: 3 | MaxFrameTime: 10ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 10ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 21 | Dropped: 24 | MaxEvents/Frame: 3 | MaxFrameTime: 14ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 60 | Events: 25 | Dropped: 32 | MaxEvents/Frame: 4 | MaxFrameTime: 10ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 10ms
+[EventLoop] FPS: 59 | Events: 2 | Dropped: 0 | MaxEvents/Frame: 1 | MaxFrameTime: 9ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 4 | Dropped: 1 | MaxEvents/Frame: 2 | MaxFrameTime: 10ms
+[EventLoop] Dropped
+1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 1 | Dropped: 1 | MaxEvents/Frame: 2 | MaxFrameTime: 12ms
+[VGA] VSync #180 (frame 3s)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 4 | Dropped: 2 | MaxEvents/Frame: 2 | MaxFrameTime: 16ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 7 | Dropped: 6 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 20 | Dropped: 26 | MaxEvents/Frame: 4 | MaxFrameTime: 11ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped
+4 events this frame (processed 1/5)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 21 | Dropped: 29 | MaxEvents/Frame: 5 | MaxFrameTime: 21ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[EventLoop] FPS: 58 | Events: 14 | Dropped: 13 | MaxEvents/Frame: 3 | MaxFrameTime: 14ms
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 1 | Dropped: 1 | MaxEvents/Frame: 2 | MaxFrameTime: 17ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 9 | Dropped: 11 | MaxEvents/Frame: 4 | MaxFrameTime: 11ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped
+2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 58 | Events: 9 | Dropped: 13 | MaxEvents/Frame: 3 | MaxFrameTime: 18ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 58 | Events: 21 | Dropped: 29 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[VGA] VSync #240 (frame 4s)
+[Input] Quit key pressed
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 1 | MaxEvents/Frame: 2 | MaxFrameTime: 14ms
+
+========== EventLoop Final Stats ==========
+Total frames processed: 0
+Total events processed: 0
+Total events dropped:   0
+Max events in one frame: 0
+===========================================
+
+========== Simulation Thread Stats ==========
+Simulation duration: 40s
+Total iterations:    99161088
+Iterations/second:   2479027
+Final time stamp:    396644612
+=============================================
+[SimThread] Simulation loop ended
+----------------------------------------
+✓ Simulation execution completed!
+
+========== 2026-11-04 17:04:58.542409 ==========
+Detected OS: Linux
+Found SDL2: sdl2-config
+SDL CFLAGS: -I/usr/include/SDL2 -D_REENTRANT
+SDL LIBS: -lSDL2
+Start simulation...
+Include directories used: /media/sf_ShareFolder/Project/Lab3/RTL
+---------------------------------
+Step 0: Clean up previously generated files...
+Remove obj_dir ...
+✓ Sucessfully remove obj_dir 
+---------------------------------
+Step 1: Run Verilator Compiler...
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:114:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  114 |     wire [3:0] m_char_y = (pix_y - M_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+                ... Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:117:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  117 |     wire [3:0] u_char_y = (pix_y - U_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:120:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  120 |     wire [3:0] s_char_y = (pix_y - S_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:123:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  123 |     wire [3:0] t_char_y = (pix_y - T_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+✓ Verilator compilation completed successfully!
+---------------------------------
+Step 2: Build the simulation executable...
+make: 进入目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o simulator.o ../simulator.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VDevelopmentBoard.cpp VDevelopmentBoard__Slow.cpp VDevelopmentBoard__Syms.cpp > VDevelopmentBoard__ALL.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o VDevelopmentBoard__ALL.o VDevelopmentBoard__ALL.cpp
+ar -cr VDevelopmentBoard__ALL.a VDevelopmentBoard__ALL.o
+ranlib VDevelopmentBoard__ALL.a
+../simulator.cpp: In function ‘void render_sdl()’:
+../simulator.cpp:305:34: warning: narrowing conversion of ‘(49 + i)’ from ‘int’ to ‘char’ [-Wnarrowing]
+  305 |         char digit_str[2] = {'1' + i, '\0'};
+      |                              ~~~~^~~
+g++    simulator.o verilated.o VDevelopmentBoard__ALL.a   -lSDL2    -o VDevelopmentBoard
+make: 离开目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+✓ Simulation executable file built successfully!
+---------------------------------
+Step 3: Start the simulation...
+----------------------------------------
+Window surface size: 800x850
+[SimThread] Starting simulation loop...
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/
+2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 22 | Dropped: 24 | MaxEvents/Frame: 4 | MaxFrameTime: 15ms
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 26 | Dropped: 29 | MaxEvents/Frame: 4 | MaxFrameTime: 14ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 8 | Dropped: 5 | MaxEvents/Frame: 3 | MaxFrameTime: 13ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 6 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 7 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 8ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 10 | Dropped: 12 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 9ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 5 | Dropped: 5 | MaxEvents/Frame: 3 | MaxFrameTime: 10ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[VGA] VSync #60 (frame 1s)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 8 | Dropped: 10 | MaxEvents/Frame: 3 | MaxFrameTime: 7ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 60 | Events: 12 | Dropped: 6 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 8 | Dropped: 9 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 7 | Dropped: 5 | MaxEvents/Frame: 3 | MaxFrameTime: 12ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 12ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 10ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[VGA] VSync #120 (frame 2s)
+[EventLoop] FPS: 59 | Events: 7 | Dropped: 6 | MaxEvents/Frame: 3 | MaxFrameTime: 7ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button '[SimThread] Reset triggered
+RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 10 | Dropped: 7 | MaxEvents/Frame: 3 | MaxFrameTime: 18ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 20ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 8ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 8 | Dropped: 8 | MaxEvents/Frame: 3 | MaxFrameTime: 8ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 12 | Dropped: 6 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 10ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 6 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 12ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 6 | Dropped: 4 | MaxEvents/Frame: 3 | MaxFrameTime: 9ms
+[VGA] VSync #180 (frame 3s)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 1 | Dropped: 2 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 3 | Dropped: 4 | MaxEvents/Frame: 3 | MaxFrameTime: 13ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 9ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 8ms
+[EventLoop] FPS: 59 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 12ms
+[EventLoop] FPS: 58 | Events: 0 | Dropped: 0 | MaxEvents/Frame: 0 | MaxFrameTime: 11ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 58 | Events: 20 | Dropped: 19 | MaxEvents/Frame: 3 | MaxFrameTime: 12ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped
+1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 50 | Dropped: 67 | MaxEvents/Frame: 4 | MaxFrameTime: 13ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 57 | Events: 4 | Dropped: 6 | MaxEvents/Frame: 4 | MaxFrameTime: 19ms
+[Input] Quit key pressed
+
+========== EventLoop Final Stats ==========
+Total frames processed: 21
+Total events processed: 1
+Total events dropped:   0
+Max events in one frame: 1
+===========================================
+
+========== Simulation Thread Stats ==========
+Simulation duration: 38s
+Total iterations:    93995319
+Iterations/second:   2473561
+Final time stamp:    375981516
+=============================================
+[SimThread] Simulation loop ended
+----------------------------------------
+✓ Simulation execution completed!
+
+========== 2026-11-04 17:08:01.915601 ==========
+Detected OS: Linux
+Found SDL2: sdl2-config
+SDL CFLAGS: -I/usr/include/SDL2 -D_REENTRANT
+SDL LIBS: -lSDL2
+Start simulation...
+Include directories used: /media/sf_ShareFolder/Project/Lab3/RTL
+---------------------------------
+Step 0: Clean up previously generated files...
+Remove obj_dir ...
+✓ Sucessfully remove obj_dir 
+---------------------------------
+Step 1: Run Verilator Compiler...
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:114:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  114 |     wire [3:0] m_char_y = (pix_y - M_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+                ... Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:115:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  115 |     wire [3:0] m_char_x = 4'd15 - ((pix_x - M_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:117:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  117 |     wire [3:0] u_char_y = (pix_y - U_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:118:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  118 |     wire [3:0] u_char_x = 4'd15 - ((pix_x - U_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:120:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  120 |     wire [3:0] s_char_y = (pix_y - S_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:121:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  121 |     wire [3:0] s_char_x = 4'd15 - ((pix_x - S_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:123:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SHIFTR generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  123 |     wire [3:0] t_char_y = (pix_y - T_Y_START) >> 2;
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:33: Operator SUB expects 10 bits on the LHS, but LHS's CONST '4'hf' generates 4 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                                 ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+%Warning-WIDTH: /media/sf_ShareFolder/Project/Lab3/RTL/VGA_pic.v:124:25: Operator ASSIGNW expects 4 bits on the Assign RHS, but Assign RHS's SUB generates 10 bits.
+                                                                       : ... In instance DevelopmentBoard.Top_inst.u_VGA_pic
+  124 |     wire [3:0] t_char_x = 4'd15 - ((pix_x - T_X_START) >> 2);
+      |                         ^
+                /media/sf_ShareFolder/Project/Lab3/RTL/Top.v:26:1: ... note: In file included from Top.v
+                DevelopmentBoard.v:22:1: ... note: In file included from DevelopmentBoard.v
+✓ Verilator compilation completed successfully!
+---------------------------------
+Step 2: Build the simulation executable...
+make: 进入目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o simulator.o ../simulator.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+/usr/bin/perl /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include VDevelopmentBoard.cpp VDevelopmentBoard__Slow.cpp VDevelopmentBoard__Syms.cpp > VDevelopmentBoard__ALL.cpp
+g++ -I/usr/include/SDL2 -D_REENTRANT -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow     -I/usr/include/SDL2 -D_REENTRANT  -Os -c -o VDevelopmentBoard__ALL.o VDevelopmentBoard__ALL.cpp
+ar -cr VDevelopmentBoard__ALL.a VDevelopmentBoard__ALL.o
+ranlib VDevelopmentBoard__ALL.a
+../simulator.cpp: In function ‘void render_sdl()’:
+../simulator.cpp:305:34: warning: narrowing conversion of ‘(49 + i)’ from ‘int’ to ‘char’ [-Wnarrowing]
+  305 |         char digit_str[2] = {'1' + i, '\0'};
+      |                              ~~~~^~~
+g++    simulator.o verilated.o VDevelopmentBoard__ALL.a   -lSDL2    -o VDevelopmentBoard
+make: 离开目录“/media/sf_ShareFolder/Project/Lab3/RTL/sim/obj_dir”
+✓ Simulation executable file built successfully!
+---------------------------------
+Step 3: Start the simulation...
+----------------------------------------
+Window surface size: 800x850
+[SimThread] Starting simulation loop...
+[EventLoop] Dropped 4 events this frame (processed 1/5)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 4 events this frame (processed 1/5)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 28 | Dropped: 41 | MaxEvents/Frame: 5 | MaxFrameTime: 14ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'B2' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 29 | Dropped: 26 | MaxEvents/Frame: 3 | MaxFrameTime: 10ms
+[Input] Button 'B2' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 9 | Dropped: 5 | MaxEvents/Frame: 4 | MaxFrameTime: 11ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'B2' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[Input] Button 'B2' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 9 | Dropped: 10 | MaxEvents/Frame: 3 | MaxFrameTime: 10ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'B2' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[Input] Button 'B2' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 3 | Dropped: 4 | MaxEvents/Frame: 3 | MaxFrameTime: 12ms
+[Input] Button 'B2' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[Input] Button 'B2' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 58 | Events: 3 | Dropped: 5 | MaxEvents/Frame: 3 | MaxFrameTime: 19ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'B2' pressed
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Button 'B2' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 21 | Dropped: 18 | MaxEvents/Frame: 4 | MaxFrameTime: 10ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 6 | Dropped: 10 | MaxEvents/Frame: 4 | MaxFrameTime: 12ms
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 5 | Dropped: 4 | MaxEvents/Frame: 3 | MaxFrameTime: 17ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 59 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 13ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[VGA] VSync #60 (frame 1s)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[Input] Button 'RESET' pressed
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[SimThread] Reset triggered
+[Input] Button 'RESET' released
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] FPS: 58 | Events: 2 | Dropped: 3 | MaxEvents/Frame: 3 | MaxFrameTime: 11ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 3 events this frame (processed 1/4)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[EventLoop] Dropped 2 events this frame (processed 1/3)
+[EventLoop] FPS: 59 | Events: 25 | Dropped: 38 | MaxEvents/Frame: 4 | MaxFrameTime: 10ms
+[EventLoop] Dropped 1 events this frame (processed 1/2)
+[Input] Quit key pressed
+
+========== EventLoop Final Stats ==========
+Total frames processed: 54
+Total events processed: 2
+Total events dropped:   1
+Max events in one frame: 2
+===========================================
+
+========== Simulation Thread Stats ==========
+Simulation duration: 14s
+Total iterations:    33946716
+Iterations/second:   2424765
+Final time stamp:    135786944
+=============================================
+[SimThread] Simulation loop ended
+----------------------------------------
+✓ Simulation execution completed!

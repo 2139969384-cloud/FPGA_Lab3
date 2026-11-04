@@ -62,8 +62,8 @@ void VDevelopmentBoard::_eval_initial(VDevelopmentBoard__Syms* __restrict vlSyms
     VL_DEBUG_IF(VL_DBG_MSGF("+    VDevelopmentBoard::_eval_initial\n"); );
     VDevelopmentBoard* const __restrict vlTOPp VL_ATTR_UNUSED = vlSymsp->TOPp;
     // Body
+    vlTOPp->__Vclklast__TOP__B2 = vlTOPp->B2;
     vlTOPp->__Vclklast__TOP__clk = vlTOPp->clk;
-    vlTOPp->__Vclklast__TOP__reset = vlTOPp->reset;
     vlTOPp->__Vclklast__TOP____VinpClk__TOP__DevelopmentBoard__DOT__Top_inst__DOT__vga_clk 
         = vlTOPp->__VinpClk__TOP__DevelopmentBoard__DOT__Top_inst__DOT__vga_clk;
 }
